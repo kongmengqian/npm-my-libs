@@ -1,5 +1,5 @@
 {
-  "name": "@kongmq/npmmylibs",
+  "name": "kongmq-npmlibs",
   "version": "0.0.2",
   "description": "",
   "main": "index.js",

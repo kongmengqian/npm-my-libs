@@ -9,6 +9,21 @@
 1. package 模板
 2. 技术栈：react+TS+antd
 3. 打包编译工具：webpack
+4. 主要用于 npm 包搭建、发布测试和学习，没有实用价值
+
+## 使用
+
+`npm i kongmq-demo`
+
+```js
+import App from "kongmq-demo";
+
+const Page = () => {
+  return <App />;
+};
+
+ReactDOM.render(<Page />, document.getElementById("root"));
+```
 
 ## 开发
 

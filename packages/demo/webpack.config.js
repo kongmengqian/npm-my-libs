@@ -54,6 +54,18 @@ module.exports = {
                   },
                 ],
                 "@babel/plugin-transform-runtime",
+                // https://babeljs.io/docs/en/babel-plugin-proposal-decorators
+                // If you are including your plugins manually and using @babel/plugin-proposal-class-properties, make sure that @babel/plugin-proposal-decorators comes before @babel/plugin-proposal-class-properties.
+
+                // When using the legacy: true mode, @babel/plugin-proposal-class-properties must be used in loose mode to support the @babel/plugin-proposal-decorators.
+                // [
+                //   "@babel/plugin-proposal-decorators",
+                //   {
+                //     // Use the legacy (stage 1) decorators syntax and behavior.
+                //     legacy: true
+                //   }
+                // ],
+                // ["@babel/plugin-proposal-class-properties", { loose: true }]
               ],
             },
           },

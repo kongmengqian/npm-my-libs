@@ -1,5 +1,9 @@
 # npm-my-libs
 
+> [手把手教你搭建一个基于 react+TS+antd 的组件库（1）](https://github.com/kongmengqian/blog/blob/master/articles/%E6%8A%80%E6%9C%AF%E7%B1%BB/npm/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%9F%BA%E4%BA%8Ereact+TS+antd%E7%9A%84%E7%BB%84%E4%BB%B6%E5%BA%93%EF%BC%881%EF%BC%89.md)
+
+> [手把手教你搭建一个基于 react+TS+antd 的组件库（2）](<https://github.com/kongmengqian/blog/blob/master/articles/%E6%8A%80%E6%9C%AF%E7%B1%BB/npm/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%9F%BA%E4%BA%8Ereact%2BTS%2Bantd%E7%9A%84%E7%BB%84%E4%BB%B6%E5%BA%93(2).md>)
+
 ## 概述
 
 npm 库搭建模板
@@ -62,6 +66,13 @@ npm 库搭建模板
 1. 安装对应的包到指定的目录：
 
    `lerna add react --scope=kongmq-demo`
+
+2. 删除包
+
+   ```
+   npm unpublish [<@scope>/]<pkg>@<version> // 删除某个版本的包
+   npm unpublish [<@scope>/]<pkg> --force // 删除整个包
+   ```
 
 ## 新建 package
 

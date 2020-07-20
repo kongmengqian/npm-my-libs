@@ -3,6 +3,11 @@
   "version": "0.0.2",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kongmengqian/npm-my-libs.git",
+    "directory": "packages/demo"
+  },
   "scripts": {
     "start": "cross-env debug=true NODE_ENV=development webpack-dev-server --max_old_space_size=32768",
     "watch": "cross-env NODE_ENV=development webpack --config ./webpack.config.js --watch",

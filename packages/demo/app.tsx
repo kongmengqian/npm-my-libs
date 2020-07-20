@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import { Button, message } from "antd";
 import A from "@/a";
 
@@ -32,5 +33,5 @@ class App extends React.Component<Props, any, any> {
     );
   }
 }
-
+ReactDOM.render(<App />, document.getElementById("root"));
 export default App;

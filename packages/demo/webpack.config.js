@@ -6,9 +6,13 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   mode: process.env.NODE_ENV,
-  entry: {
-    index: "./index.tsx",
-  },
+  entry: process.env.debug
+    ? {
+        app: "./app.tsx",
+      }
+    : {
+        index: "./index.tsx",
+      },
   output: {
     filename: "[name].js",
     path: path.resolve(__dirname, "dist"),

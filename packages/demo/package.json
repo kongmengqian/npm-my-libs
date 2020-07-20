@@ -1,12 +1,14 @@
 {
   "name": "kongmq-demo",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "cross-env debug=true NODE_ENV=development webpack-dev-server --max_old_space_size=32768",
+    "watch": "cross-env NODE_ENV=development webpack --config ./webpack.config.js --watch",
     "dev": "cross-env NODE_ENV=development webpack --config ./webpack.config.js",
     "build": "cross-env NODE_ENV=production webpack --config ./webpack.config.js",
+    "prepublish": "yarn run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

@@ -8,6 +8,7 @@
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended"
   ],
+  // https://github.com/yannickcr/eslint-plugin-react#configuration
   "settings": {
     "react": {
       "createClass": "createReactClass", // Regex for Component Factory to use,
@@ -40,5 +41,6 @@
     "sourceType": "module"
   },
   "plugins": ["react", "@typescript-eslint"],
+  "ignorePatterns": ["*.config.js"],
   "rules": {}
 }
